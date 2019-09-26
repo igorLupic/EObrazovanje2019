@@ -5,7 +5,7 @@ import eObrazovanje.Model.ProfessorRole;
 public class ProfessorRoleDTO {
 	private Long id;
 	private String role;
-	private ProfessorRoleDTO professorDTO;
+	private ProfessorDTO professorDTO;
 	private SubjectDTO subjectDTO;
 	
 	public ProfessorRoleDTO(ProfessorRole professorRole){
