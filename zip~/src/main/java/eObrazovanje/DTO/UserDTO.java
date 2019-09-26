@@ -1,6 +1,6 @@
-package ftn.project.eObrazovanje.web.dto;
+package eObrazovanje.DTO;
 
-import ftn.project.eObrazovanje.model.User;
+import eObrazovanje.Model.User;
 
 public class UserDTO {
 	private Long id;
