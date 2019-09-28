@@ -1,8 +1,8 @@
-INSERT INTO user( id, dtype,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path) VALUES ( '1','Student', 'Blagojcic', 'Stevan', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'STUDENT', 'student', '23525235235233', 'Nusiceva 5', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile1.jpg' );
-INSERT INTO user( id, dtype,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path) VALUES ( '2','Student', 'Miric', 'Mitar', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'STUDENT', 'mitar', '23525235235233', 'Sremska 12', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile2.jpg' );
-INSERT INTO user( id, dtype,last_name, name,password,role,user_name) VALUES ( '10','User', 'Blagojcic', 'Stevan', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'ADMIN', 'admin');
-INSERT INTO user(id, dtype ,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path,title) VALUES ( '9','Professor',  'Gabric', 'Stefan', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'PROFESSOR', 'profesor', '1313121251251', 'Sremska 33', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile3.jpg' , 'neki veliki dr mr');
-INSERT INTO user(id, dtype ,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path,title) VALUES ( '4','Professor',  'Gabric', 'Stefan','profesor' , 'PROFESSOR', 'profesor', '1313121251251', 'Sremska 33', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile3.jpg' , 'neki veliki dr mr');
+INSERT INTO user( id, dtype,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path) VALUES ( '1','Student', 'Lupic', 'Igor', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'STUDENT', 'student', '23525235235233', 'Petra kocica 2', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile1.jpg' );
+INSERT INTO user( id, dtype,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path) VALUES ( '2','Student', 'Milatovic', 'Aleksandar', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'STUDENT', 'milat', '23525235235233', 'Save Ljubojeva 7', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile2.jpg' );
+INSERT INTO user( id, dtype,last_name, name,password,role,user_name) VALUES ( '10','User', 'Lupic', 'Igor', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'ADMIN', 'admin');
+INSERT INTO user(id, dtype ,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path,title) VALUES ( '9','Professor',  'Milic', 'Nikola', "$2a$10$KVlDpMjpRVu8WiMQrttt4.epl6aBcI0V9BlwUxzEakFrCEaGVrQ7C", 'PROFESSOR', 'profesor', '1313121251251', 'Karadjordjeva 10', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile3.jpg' , 'neki veliki dr mr');
+INSERT INTO user(id, dtype ,last_name, name,password,role,user_name,jmbg,address,date_of_birth,gender,picture_path,title) VALUES ( '4','Professor',  'Markovic', 'Stefan','profesor' , 'PROFESSOR', 'profesor', '1313121251251', 'Gunduljeva 2', '2008-10-03 22:59:52', 'm', '.\\src\\main\\resources\\public\\upload\\profile3.jpg' , 'neki veliki dr mr');
 
 INSERT INTO document (id, name, path,student_id) VALUES ('1', 'indeks', '.\\src\\main\\resources\\public\\upload\\indeks.jpg' , '1');
 INSERT INTO transaction (id, bank_account,price, purpose, recipient, student_id) VALUES ('1', '31231231-1231-12', '2000', 'overa semestra', 'FTN', '1');
@@ -13,7 +13,7 @@ INSERT INTO subject (id,name,semester) VALUES ('3', 'Matematika', '1');
 INSERT INTO subject (id,name,semester) VALUES ('4', 'Android', '4');
 INSERT INTO subject (id,name,semester) VALUES ('5', 'eObrazovanje', '6');
 INSERT INTO subject (id,name,semester) VALUES ('6', 'eUprava', '6');
-INSERT INTO obligation(id,date_of_obligation,obligation_type,points,subject_id) VALUES ('1', '2017-10-03 22:59:52', 'kolokvijum 1', '30', '1');
+INSERT INTO obligation(id,date_of_obligation,obligation_type,points,subject_id) VALUES ('1', '2019-10-03 22:59:52', 'kolokvijum 1', '30', '1');
 INSERT INTO professor_role(id,role,professor_id,subject_id) VALUES ('1', 'asistent', '9', '1');
 INSERT INTO professor_role(id,role,professor_id,subject_id) VALUES ('2', 'saradnik u nastavi', '9', '4');
 INSERT INTO user_subjects (students_id,subjects_id) VALUES ('1', '2');
