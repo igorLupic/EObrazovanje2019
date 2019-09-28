@@ -19,7 +19,7 @@ angular.module('eObrazovanjeApp').controller('LoginController', ['$rootScope', '
 		
 		$.ajax({
 			type: 'POST',
-			url: 'http://localhost:8090/oauth/token',	
+			url: 'http://localhost:8080/oauth/token',	
 			headers: {"Authorization": param },
 			data: data,
 			success: function(response){ 
